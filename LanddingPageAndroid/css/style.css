@@ -404,6 +404,7 @@ h1 {
 
 #uiux {
     background-color: #f8f8f8;
+    padding-bottom: 40px;
 }
 
 #content_course {
@@ -506,6 +507,7 @@ table {
 }
 
 @media (max-width: 768px) {
+
     .content-item-right {
         padding: 0 10px;
     }
@@ -597,25 +599,45 @@ table {
 
 }
 
+.for-mobile{
+    display: none!important;
+}
+
 @media (max-width: 1000px) {
     #content_course {
         padding-bottom: 40px;
     }
 }
 
-@media (max-width: 992px) {
+@media only screen  and (max-width: 992px) {
+
+    .for-mobile{
+        display: block!important;
+    }
+
     #slider .content_slide {
         margin-top: 20px !important;
     }
 
     #content_course .content-course-part{
-        display: block!important;
+        flex-direction:  column!important;
     }
 
     #content_course .col-md-9{
-        padding-left: 0px!important;
+        padding: 0px 0px 50px 0px!important;
+
     }
 
+    #uiux .content-left{
+        display: flex;
+        flex-direction:  row;
+        justify-content: center;
+        align-items: center;
+    }
+    #content_course img{
+        width: 80%!important;
+        height: auto;
+    }
     /*#content_course,#uiux img {*/
         /*width: 60%;*/
         /*height: auto !important;*/
@@ -638,6 +660,7 @@ table {
         height: 280px;
     }
 }
+
 .row {
     margin: 0;
 }
@@ -654,6 +677,12 @@ table {
 #uiux .content-right {
     margin-top: 50px;
     padding-bottom: 50px;
+}
+
+#uiux img {
+width: 60%;
+height: auto !important;
+    padding-top: 70px;
 }
 
 #benefit {
@@ -691,7 +720,7 @@ table {
 #content_course .content-course-part{
     display: flex;
     flex-direction:  row;
-    justify-content: center;
+
     align-items: center;
     padding-bottom: 20px;
 
@@ -702,7 +731,12 @@ table {
 }
 
 #content_course .content-course-part>.col-md-9{
-    padding-left: 100px;
+    padding-left: 40px;
+}
+
+#content_course img{
+    width: 50%;
+    height: auto;
 }
 
 
